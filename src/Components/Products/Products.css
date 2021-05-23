@@ -13,19 +13,11 @@
   .buy-button:hover{
     background-color: #000bfb !important;
   }
-<<<<<<< HEAD
-  .card{
-    transition:transform 0.4s ease-in-out;
-    }
-
-  .card:hover {
-=======
   .pd-card{
     transition:transform 0.4s ease-in-out;
     }
 
   .pd-card:hover {
->>>>>>> 033ecf5 (First commit)
       transform: translateY(-10px);
     }
 

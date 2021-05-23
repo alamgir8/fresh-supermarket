@@ -14,3 +14,7 @@ table{
     border-radius: 1em;
     overflow: hidden;
   }
+
+  .bg-order{
+      background-color: aqua;
+  }

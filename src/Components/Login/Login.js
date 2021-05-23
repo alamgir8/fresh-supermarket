@@ -10,11 +10,8 @@ import { Form } from 'react-bootstrap';
 import { useState } from 'react';
 import { useContext } from 'react';
 import { userContext } from '../../App';
-<<<<<<< HEAD
-=======
 import swal from 'sweetalert';
 
->>>>>>> 033ecf5 (First commit)
 
 
 
@@ -93,13 +90,10 @@ const Login = () => {
             firebase.auth().signInWithEmailAndPassword(user.email, user.password)
             .then((res) => {
                 const user = res.user;
-<<<<<<< HEAD
-=======
                 swal({
                     title: "Login Successfully!",
                     icon: "success",
                   });
->>>>>>> 033ecf5 (First commit)
                 setLoggedInUser(user);
                 setUser(user);
                 history.replace(from);
@@ -107,13 +101,10 @@ const Login = () => {
             })
             
             .catch((error) => {
-<<<<<<< HEAD
-=======
                 swal({
                     title: "Login Error!",
                     icon: "error",
                   });
->>>>>>> 033ecf5 (First commit)
               const errorMessage = error.message;
               const newUserInfo = {...user};
               newUserInfo.error = errorMessage;
@@ -129,17 +120,10 @@ const Login = () => {
              
                 <form onSubmit={handleSubmit}>
                     <Form.Group >
-<<<<<<< HEAD
-                        <Form.Control  onBlur={handleBlur} name='email'  type="email" placeholder='Email' required/>
-                    </Form.Group>
-                        <Form.Group >
-                        <Form.Control  onBlur={handleBlur} name='password'  type="password" placeholder='Password' required/>
-=======
                         <Form.Control  onBlur={handleBlur} name='email' defaultValue='alamgir1@gmail.com'  type="email" placeholder='Email' required/>
                     </Form.Group>
                         <Form.Group >
                         <Form.Control  onBlur={handleBlur} name='password' defaultValue='abcd1234@@@@####'  type="password" placeholder='Password' required/>
->>>>>>> 033ecf5 (First commit)
                     </Form.Group>
                         <p className='text-danger'>{}</p>
                         <button className='btn btn-success w-100'>Login</button>

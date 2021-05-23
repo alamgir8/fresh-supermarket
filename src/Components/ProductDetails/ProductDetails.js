@@ -1,9 +1,6 @@
 import React from 'react';
 import { useHistory, useLocation } from 'react-router';
-<<<<<<< HEAD
-=======
 import swal from 'sweetalert';
->>>>>>> 033ecf5 (First commit)
 
 const ProductDetails = (props) => {
     const {_id, name, price, weight} = props.pd;
@@ -17,14 +14,10 @@ const ProductDetails = (props) => {
         })
         .then(res => res.json())
         .then(data => {
-<<<<<<< HEAD
-            alert('This product delete successfully');
-=======
             swal({
                 title: "Product delete Successfully!",
                 icon: "success",
               });
->>>>>>> 033ecf5 (First commit)
             history.replace(from);
             history.push("/admin");
         })

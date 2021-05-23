@@ -3,12 +3,8 @@ import React, { useState } from 'react';
 import { Nav } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
 import AllProduct from '../AllProduct/AllProduct';
-<<<<<<< HEAD
-import './Admin.css'
-=======
 import './Admin.css';
 import swal from 'sweetalert';
->>>>>>> 033ecf5 (First commit)
 
 
 const Admin = () => {
@@ -30,12 +26,6 @@ const Admin = () => {
             headers: {'content-type': 'application/json'},
             body: JSON.stringify(productData)
         })
-<<<<<<< HEAD
-        .then(res => 
-            alert('Product Added Successfully'))
-        
-
-=======
         .then(res => {
             swal({
                 title: "Product Added Successfully!",
@@ -49,7 +39,6 @@ const Admin = () => {
                 icon: "error",
               });
         })
->>>>>>> 033ecf5 (First commit)
     };
 
 
@@ -86,12 +75,7 @@ const Admin = () => {
 
     return (
         <div className="admin">
-<<<<<<< HEAD
-           <div className="container">
-               
-=======
            <div className="mx-1"> 
->>>>>>> 033ecf5 (First commit)
                <div className="row">
                    <div className="col-lg-3 bg-sidebar py-4">
                         <Nav defaultActiveKey="/home" className="flex-column">

@@ -9,10 +9,7 @@ import fbLogo from '../../img/Facebook.png';
 import googleLogo from '../../img/goggle.jpg'
 import { useContext } from 'react';
 import { userContext } from '../../App';
-<<<<<<< HEAD
-=======
 import swal from 'sweetalert';
->>>>>>> 033ecf5 (First commit)
 
 
 
@@ -92,11 +89,6 @@ const SignUp = () => {
                     newUserInfo.error = '';
                     setUser(newUserInfo);
                     updateUserName(user.name);
-<<<<<<< HEAD
-                    alert('Account created successfully!!')
-                    })
-                    .catch((error) => {
-=======
                     swal({
                         title: "Account Created Successfully!",
                         icon: "success",
@@ -107,7 +99,6 @@ const SignUp = () => {
                             title: "Sign Up Error!",
                             icon: "error",
                           });
->>>>>>> 033ecf5 (First commit)
                     const errorMessage = error.message;
                     const newUserInfo = {...user};
                     newUserInfo.error = errorMessage;
@@ -146,13 +137,7 @@ const SignUp = () => {
                                 <Form.Group >
                                     <Form.Control  onBlur={handleBlur} name='password' type="password" placeholder='Password' required/>
                                 </Form.Group>
-<<<<<<< HEAD
-                                {/* <Form.Group >
-                                    <Form.Control  onBlur={handleBlur} name='confirm-password' type="password" placeholder='Confirm password' required/>
-                                </Form.Group> */}
-=======
                                
->>>>>>> 033ecf5 (First commit)
                                 <button className='btn btn-warning w-100'>Create an account</button>
                             </form>
                             <p className='text-center m-auto pt-4'>Already have an account?  <Link to="/login">Login</Link></p>

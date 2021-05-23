@@ -18,7 +18,7 @@ const AllProduct = () => {
         <div className="container ">
             <div className="row">
              <Table striped bordered hover className="table-bordered rounded bg-form">
-                <thead className='bg-t-head text-white'>
+                <thead className='fw-bolder'>
                     <tr>
                         <th scope="col">Product Name</th>
                         <th scope="col" >Weight</th>

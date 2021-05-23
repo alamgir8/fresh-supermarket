@@ -1,10 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
-<<<<<<< HEAD
-import { Spinner, Table } from 'react-bootstrap';
-=======
 import { Table } from 'react-bootstrap';
 import ContentLoader from 'react-content-loader'
->>>>>>> 033ecf5 (First commit)
 import { userContext } from '../../App';
 import OrderDetails from '../OrderDetails/OrderDetails';
 import './Order.css'
@@ -17,18 +13,10 @@ const Orders = () => {
     
 
     useEffect(() => {
-<<<<<<< HEAD
-        loadingSpinner(true)
-=======
->>>>>>> 033ecf5 (First commit)
         fetch(`https://fresh-super-market-server.herokuapp.com/order?email=`+loggedInUser.email)
         .then(res => res.json())
         .then(data => {
             setOrders(data);
-<<<<<<< HEAD
-            loadingSpinner(false)
-=======
->>>>>>> 033ecf5 (First commit)
         })
         .catch(error => console.log(error))
     }, [loggedInUser.email]);
@@ -42,38 +30,10 @@ const Orders = () => {
     }
   
 
-<<<<<<< HEAD
-    const loadingSpinner = (show) => {
-        const spinner = document.getElementById('loading-spinner');
-       
-        if (show) {
-            spinner.classList.remove('d-none');
-        }
-      else{
-        spinner.classList.add('d-none');
-      }
-    }
-=======
->>>>>>> 033ecf5 (First commit)
 
    
     return (
         <div className='container'>
-<<<<<<< HEAD
-            <div className="d-flex justify-content-center py-5">
-                    <Spinner id='loading-spinner' className='d-none' animation="border" role="status" variant="success">
-                        <span className="sr-only">Loading...</span>
-                    </Spinner>
-            </div>
-            <div className="bg-checkout p-4">
-            <h4 className='pb-4 text-center text-white'>{loggedInUser.displayName} You have {orders.length} Orders</h4>
-            <Table striped bordered hover className="bg-form ">
-                <thead className='bg-t-head text-white'>
-                    <tr>
-                        <th scope="col">Product Name</th>
-                        <th scope="col" >Weight</th>
-                        <th scope="col">Price</th>
-=======
             {
                 orders.length === 0 ?
                 <div className="py-5">
@@ -138,7 +98,7 @@ const Orders = () => {
                             <rect x="933" y="54" rx="3" ry="3" width="24" height="33" />
                     </ContentLoader>
             </div>:
-            <div className="p-3 my-3 card">
+            <div className="p-3 my-3 card bg-order">
             <h4 className='pb-4 text-center'>{loggedInUser.displayName} You have {orders.length} Orders</h4>
                 <div className="table-responsive">
                 <table className="table table-hover table-borderless">
@@ -147,7 +107,6 @@ const Orders = () => {
                         <th className='fw-bolder'>Product Name</th>
                         <th className='fw-bolder'>Weight</th>
                         <th className='fw-bolder'>Price</th>
->>>>>>> 033ecf5 (First commit)
                     </tr>
                 </thead>
                 <tbody>
@@ -155,14 +114,6 @@ const Orders = () => {
                       orders.map(order => <OrderDetails order={order} key={order.product._id}></OrderDetails>)
                     }
                     <tr>
-<<<<<<< HEAD
-                    <td colSpan="2" className='h5'>Total Price</td>
-                    <td className='h6'>${totalPrice}</td>
-                    </tr>
-                </tbody>                
-            </Table>
-            </div>
-=======
                     <td colSpan="2" className='h5 fw-bolder'>Total Price</td>
                     <td className='h6 fw-bolder'>${totalPrice}</td>
                     </tr>
@@ -171,7 +122,6 @@ const Orders = () => {
                 </div>
             </div>
             }
->>>>>>> 033ecf5 (First commit)
             
         </div>
     );

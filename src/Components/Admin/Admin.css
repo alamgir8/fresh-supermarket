@@ -3,6 +3,7 @@
 }
 .admin{
     background: lightgray;
+    overflow: hidden;
 }
 .bg-admin{
     background: #e0fcf8;
@@ -16,13 +17,6 @@
 .bg-sidebar a{
     color: #ffffff ;
 }
-<<<<<<< HEAD
-.sidebar:hover{
-    color: rgb(10, 243, 154);
-}
-=======
-
->>>>>>> 033ecf5 (First commit)
 
 .bg-form{
     background-color: #ffffff;

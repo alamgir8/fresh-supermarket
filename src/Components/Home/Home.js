@@ -1,63 +1,22 @@
 import React, { useEffect, useState } from 'react';
-<<<<<<< HEAD
-import { Spinner } from 'react-bootstrap';
-=======
 import ContentLoader from 'react-content-loader'
->>>>>>> 033ecf5 (First commit)
 import Products from '../Products/Products';
 import './Home.css'
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 033ecf5 (First commit)
 const Home = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-<<<<<<< HEAD
-        loadingSpinner(true)
-=======
->>>>>>> 033ecf5 (First commit)
         fetch('https://fresh-super-market-server.herokuapp.com/products')
         .then(res => res.json())
         .then(data => {
             setProducts(data);
-<<<<<<< HEAD
-            loadingSpinner(false)
-=======
            
->>>>>>> 033ecf5 (First commit)
         })
         
     }, []);
 
-<<<<<<< HEAD
-    const loadingSpinner = (show) => {
-        const spinner = document.getElementById('loading-spinner');
-       
-        if (show) {
-            spinner.classList.remove('d-none');
-        }
-      else{
-        spinner.classList.add('d-none');
-      }
-    }
-    return (
-        <div className='bg-secondary py-5'>
-            <div className='container'>
-                <div className="d-flex justify-content-center">
-                    <Spinner id='loading-spinner' className='d-none' animation="border" role="status" variant="success">
-                    </Spinner>
-                </div>
-            <div className="row row-eq-height">
-                {
-                    products.map(product => <Products product={product} key={product._id}></Products>)
-                   
-                }
-            </div>
-=======
     
     return (
         <div className='py-5'>
@@ -117,7 +76,6 @@ const Home = () => {
                    }
                </div>
                }
->>>>>>> 033ecf5 (First commit)
             </div>
         </div>
     );
