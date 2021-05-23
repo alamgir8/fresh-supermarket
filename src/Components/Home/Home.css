@@ -1,0 +1,9 @@
+.row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row-eq-height>div[class*=col-] {
+    display: flex;
+}
+
+

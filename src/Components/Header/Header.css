@@ -1,0 +1,12 @@
+.nav-button:hover{
+    color: rgb(233, 8, 94) !important;
+}
+p{
+    cursor: pointer;
+}
+.nav-button{
+    cursor: pointer !important;
+}
+.bg-head{
+    background-color: #050f30;
+}

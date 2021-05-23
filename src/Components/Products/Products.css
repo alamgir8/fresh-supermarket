@@ -1,0 +1,35 @@
+
+.bg-gray{
+    background: #f3f0f0;
+  }
+  .card-body{
+    flex: none !important;
+  }
+
+  .buy-button{
+    background: #ff136f !important;
+    color: #fff !important;
+  }
+  .buy-button:hover{
+    background-color: #000bfb !important;
+  }
+<<<<<<< HEAD
+  .card{
+    transition:transform 0.4s ease-in-out;
+    }
+
+  .card:hover {
+=======
+  .pd-card{
+    transition:transform 0.4s ease-in-out;
+    }
+
+  .pd-card:hover {
+>>>>>>> 033ecf5 (First commit)
+      transform: translateY(-10px);
+    }
+
+    .delete-button{
+      background-color: rgb(250, 0, 0) !important;
+      
+    }
